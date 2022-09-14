@@ -1,0 +1,14 @@
+{
+  "name": "natour-v2",
+  "version": "2.0.0",
+  "description": "Natour landing",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Mydal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

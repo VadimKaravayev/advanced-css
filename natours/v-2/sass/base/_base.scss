@@ -1,0 +1,25 @@
+/* simple reset with universal selector */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Setting up a root font size */
+html {
+  /* 
+  16px is default browswer root font-size 
+  to set up a foot font size of 10px and make it scalable,
+  we need to set it up in percentage.
+  So to calculate 10px, we use the formula
+  10 / 16 * 100 =  62.5
+  */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
