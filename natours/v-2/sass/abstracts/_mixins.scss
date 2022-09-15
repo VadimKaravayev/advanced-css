@@ -1,0 +1,8 @@
+@mixin clearfix {
+  //float reduces a block height to zero. Clearfix fixes it
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
