@@ -1,7 +1,7 @@
 .row {
   // 1140px is a standard. We use rem, so 1140 / 10
   max-width: $grid-width;
-  background-color: #eee;
+  //   background-color: #eee;
   //centering a block element
   margin: 0 auto;
 
@@ -11,7 +11,7 @@
   }
 
   [class^='col-'] {
-    background-color: orangered;
+    // background-color: orangered;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }

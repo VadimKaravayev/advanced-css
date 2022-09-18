@@ -1,0 +1,22 @@
+@function color-gradient($type, $alpha1: 1, $alpha2: 1) {
+  $colors-map: (
+    'primary': (
+      $color-primary-light,
+      $color-primary-dark
+    ),
+    'secondary': (
+      $color-secondary-light,
+      $color-secondary-dark
+    ),
+    'tertiary': (
+      $color-tertiary-light,
+      $color-tertiary-dark
+    )
+  );
+
+  @return linear-gradient(
+    to right bottom,
+    rgba(nth(map-get($colors-map, $type), 1), $alpha1),
+    rgba(nth(map-get($colors-map, $type), 2), $alpha2)
+  );
+}
