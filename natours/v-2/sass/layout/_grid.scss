@@ -1,6 +1,10 @@
 .row {
   // 1140px is a standard. We use rem, so 1140 / 10
   max-width: $grid-width;
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
   //   background-color: #eee;
   //centering a block element
   margin: 0 auto;
@@ -8,14 +12,26 @@
   //everything except the last child
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   [class^='col-'] {
     // background-color: orangered;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
     }
     float: left;
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
   }
 
   @include clearfix;

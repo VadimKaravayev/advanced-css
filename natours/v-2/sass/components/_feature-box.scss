@@ -7,6 +7,10 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: all 0.2s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
@@ -14,6 +18,9 @@
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
     background-image: linear-gradient(
       to right,
       $color-primary-light,
