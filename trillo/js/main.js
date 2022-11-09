@@ -2,6 +2,10 @@ function getNav(document) {
   return document.querySelector('.side-nav');
 }
 
+function getNavItems(nav) {
+  return nav.querySelectorAll('.side-nav__item');
+}
+
 function removeActiveClass(nav) {
   const activeClass = 'side-nav__item--active';
   const activeItem = nav.querySelector('.' + activeClass);
@@ -10,10 +14,6 @@ function removeActiveClass(nav) {
 
 function addActiveClass(item) {
   item.classList.add('side-nav__item--active');
-}
-
-function getNavItems(nav) {
-  return nav.querySelectorAll('.side-nav__item');
 }
 
 (function (nav) {
