@@ -15,8 +15,22 @@
     <title>nexter &mdash; your home, your freedom</title>
   </head>
   <body class="container">
-    <aside class="sidebar">Sidebar</aside>
-    <header class="header">Header</header>
+    <aside class="sidebar">
+      <button class="nav-btn"></button>
+    </aside>
+    <header class="header">
+      <img src="img/logo.png" alt="Nexter logo" class="header__logo" />
+      <h3 class="heading-3">Your own home :</h3>
+      <h1 class="heading-1">The ultimate personal freedom</h1>
+      <button class="btn header__btn">View your properties</button>
+      <div class="header__seenon-text">Seen on</div>
+      <div class="header__seenon-logos">
+        <img src="img/logo-bbc.png" alt="Seen on logo 1" />
+        <img src="img/logo-forbes.png" alt="Seen on logo 2" />
+        <img src="img/logo-techcrunch.png" alt="Seen on logo 3" />
+        <img src="img/logo-bi.png" alt="Seen on logo 4" />
+      </div>
+    </header>
     <section class="realtors">Top 3 realtors</section>
     <section class="features">
       <div class="feature">
@@ -140,9 +154,9 @@
           <svg>
             <use xlink:href="img/sprite.svg#icon-key"></use>
           </svg>
-          <p>$1,2</p>
+          <p>$1,2000,000</p>
         </div>
-        <button class="cta">Contact realtor</button>
+        <button class="btn home__btn">Contact realtor</button>
       </div>
       <div class="home">
         <img src="img/house-2.jpeg" alt="House 2" class="home__img" />
@@ -174,7 +188,7 @@
           </svg>
           <p>$2,750,000</p>
         </div>
-        <button class="cta">Contact realtor</button>
+        <button class="btn home__btn">Contact realtor</button>
       </div>
       <div class="home">
         <img src="img/house-3.jpeg" alt="House 3" class="home__img" />
@@ -206,7 +220,7 @@
           </svg>
           <p>$850,000</p>
         </div>
-        <button class="cta">Contact realtor</button>
+        <button class="btn home__btn">Contact realtor</button>
       </div>
       <div class="home">
         <img src="img/house-4.jpeg" alt="House 4" class="home__img" />
@@ -238,7 +252,7 @@
           </svg>
           <p>$1,950,000</p>
         </div>
-        <button class="cta">Contact realtor</button>
+        <button class="btn home__btn">Contact realtor</button>
       </div>
       <div class="home">
         <img src="img/house-5.jpeg" alt="House 5" class="home__img" />
@@ -270,7 +284,7 @@
           </svg>
           <p>$9,500,000</p>
         </div>
-        <button class="cta">Contact realtor</button>
+        <button class="btn home__btn">Contact realtor</button>
       </div>
       <div class="home">
         <img src="img/house-6.jpeg" alt="House 6" class="home__img" />
@@ -302,10 +316,106 @@
           </svg>
           <p>$600,000</p>
         </div>
-        <button class="cta">Contact realtor</button>
+        <button class="btn home__btn">Contact realtor</button>
       </div>
     </section>
-    <section class="gallery">Gallery</section>
-    <footer class="footer">Footer</footer>
+    <section class="gallery">
+      <!-- emmet syntax -->
+      <!-- (figure.gallery__item.gallery__item--$>img.gallery__img[src=img/gal-$][alt="Gallery image $"])*14 -->
+      <figure class="gallery__item gallery__item--1">
+        <img src="img/gal-1.jpeg" alt="Gallery image 1" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="img/gal-2.jpeg" alt="Gallery image 2" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="img/gal-3.jpeg" alt="Gallery image 3" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="img/gal-4.jpeg" alt="Gallery image 4" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="img/gal-5.jpeg" alt="Gallery image 5" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img src="img/gal-6.jpeg" alt="Gallery image 6" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img src="img/gal-7.jpeg" alt="Gallery image 7" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img src="img/gal-8.jpeg" alt="Gallery image 8" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+        <img src="img/gal-9.jpeg" alt="Gallery image 9" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--10">
+        <img
+          src="img/gal-10.jpeg"
+          alt="Gallery image 10"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--11">
+        <img
+          src="img/gal-11.jpeg"
+          alt="Gallery image 11"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--12">
+        <img
+          src="img/gal-12.jpeg"
+          alt="Gallery image 12"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--13">
+        <img
+          src="img/gal-13.jpeg"
+          alt="Gallery image 13"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--14">
+        <img
+          src="img/gal-14.jpeg"
+          alt="Gallery image 14"
+          class="gallery__img"
+        />
+      </figure>
+    </section>
+    <footer class="footer">
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="javascript:void(0)" class="nav__link"
+            >Find your dream home</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="javascript:void(0)" class="nav__link">Request proposal</a>
+        </li>
+        <li class="nav__item">
+          <a href="javascript:void(0)" class="nav__link"
+            >Download home planner</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="javascript:void(0)" class="nav__link">Contact us</a>
+        </li>
+        <li class="nav__item">
+          <a href="javascript:void(0)" class="nav__link"
+            >Submit your property</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="javascript:void(0)" class="nav__link">Come work with us</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+        placeat alias molestiae soluta quo laudantium quas hic, expedita ad
+      </p>
+    </footer>
   </body>
 </html>
