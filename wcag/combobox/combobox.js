@@ -1,3 +1,11 @@
+document.body.addEventListener("keyup", (e) => {
+  const { key } = e;
+  if (key === "Tab") {
+    const el = document.querySelector(":focus");
+    console.log(el);
+  }
+});
+
 const SelectActions = {
   Close: 0,
   CloseSelect: 1,
