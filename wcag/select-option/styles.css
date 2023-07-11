@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.selector-label {
+  position: relative;
+  display: inline-block;
+  color: midnightblue;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.selector-label select {
+  min-height: 2rem;
+  background-color: orangered;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  border: 2px solid currentColor;
+  outline: none;
+  padding: 0.4rem 0.7rem;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  /* removing the native arrow */
+  appearance: none;
+}
+
+/* creating your own arrow */
+.selector-label::after {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: white;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 70%;
+  right: 4%;
+}
+
+.selector-options {
+  list-style: none;
+  padding: 5px 0;
+  background-color: azure;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.selector-options li {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selector-options li:hover {
+  background-color: orange;
+}

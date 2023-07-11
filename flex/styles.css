@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  gap: 3px;
+}
+
+.item {
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  flex-basis: 100px;
+}
+
+.item:nth-of-type(3) {
+  flex-shrink: 2;
+}

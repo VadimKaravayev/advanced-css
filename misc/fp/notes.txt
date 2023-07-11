@@ -1,0 +1,4 @@
+1. pure functions
+2. immutability
+3. side effects
+4. referential transparency
